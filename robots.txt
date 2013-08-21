@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://asphxia.github.io/sitemap.xml 
