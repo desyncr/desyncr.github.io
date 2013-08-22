@@ -104,11 +104,13 @@ img {
 }
 
 header {
-  width:270px;
+  width:200px;
   float:left;
   position:fixed;
 }
-
+article header {
+    width: 600px
+}
 header ul {
   list-style:none;
   height:40px;
@@ -192,7 +194,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:630px;
   float:right;
   padding-bottom:50px;
 }
@@ -284,4 +286,12 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+article header {
+    position: static;
+    float: none;
+}
+.entry-title {
+    margin-bottom: 0px;
 }
