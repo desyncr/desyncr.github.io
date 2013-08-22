@@ -46,7 +46,6 @@ a small {
   font-size:11px;
   color:#777;
   margin-top:-0.6em;
-  display:block;
 }
 
 a:hover small {
@@ -294,4 +293,24 @@ article header {
 }
 .entry-title {
     margin-bottom: 0px;
+}
+header p.view {
+    margin: 0 0 3px;
+}
+
+header p.view.last {
+    margin: 0 0 20px;
+}
+
+#gh_repos {
+    background: none;
+    border: none;
+    box-shadow: none;
+    height: 100%;
+}
+
+#gh_repos li {
+    float: none;
+    display: block;
+    width: 100%;
 }
