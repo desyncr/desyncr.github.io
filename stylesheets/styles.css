@@ -45,8 +45,8 @@ a:hover {
 a small {
   font-size:11px;
   color:#777;
-  margin-top:-0.6em;
-  display: inline;
+  margin-top:0;
+  display: block;
 }
 
 a:hover small {
@@ -314,4 +314,7 @@ header p.view.last {
     float: none;
     display: block;
     width: 100%;
+}
+footer p {
+    margin: 0;
 }
