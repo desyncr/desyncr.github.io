@@ -13,4 +13,3 @@ The project is licensed under the [GNU GPL v3][2] ([tldr][3]) license. Which mea
   [1]: https://github.com/asphxia/dumpr/
   [2]: http://www.gnu.org/licenses/gpl.html
   [3]: http://www.tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)
-
