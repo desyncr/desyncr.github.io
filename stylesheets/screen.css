@@ -328,3 +328,6 @@ article footer {
     position: static;
     float: none;
 }
+article {
+  margin-bottom: 50px;
+}
