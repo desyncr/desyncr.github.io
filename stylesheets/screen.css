@@ -340,4 +340,9 @@ div#projects p a{display: block;}
     body {
         padding: 10px;
     }
+    article header {
+        width: 100%;
+    }
 }
+
+
