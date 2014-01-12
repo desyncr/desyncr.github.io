@@ -67,7 +67,7 @@ blockquote {
 
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
+  color:#666;
   font-size:12px;
 }
 
@@ -330,4 +330,14 @@ article footer {
 }
 article {
   margin-bottom: 50px;
+}
+
+div#projects p a{display: block;}
+
+@media print, screen and (max-width: 960px) {
+    
+    #projects, #networks { display: none; }
+    body {
+        padding: 10px;
+    }
 }
