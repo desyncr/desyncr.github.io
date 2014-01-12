@@ -6,10 +6,26 @@
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <meta name="author" content="{{ site.author }}">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index, follow"/>
+  <meta name="distribution" content="global"/>
+  <meta name="rating" content="general"/>
+  <meta name="language" content="es_ES"/>
+
+  <meta property="og:url" content="http://me.syncr.com.ar"/>
+  <meta property="og:site_name" content="Dar&iacute;o Cavuotti"/>
+  <meta property="og:title" content="Dar&iacute;o Cavuotti"/>
+  <meta property="og:description" content="Dar&iacute;o Cavuotti"/>
+
+  <meta itemprop="url" content="http://me.syncr.com.ar"/>
+  <meta itemprop="name" content="Dar&iacute;o Cavuotti"/>
+  <meta itemprop="title" content="Dar&iacute;o Cavuotti"/>
+  <meta itemprop="description" content="Dar&iacute;o Cavuotti"/>
 
   {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
   <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
-  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  {% if page.keywords %}<meta name="keywords" content="Carlos Dario Cavuotti, Dar&iacute; Cavuotti, Carlos Cavuotti, Cavuotti, Web developer, blog, software, {{ page.keywords }}">{% endif %}
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
