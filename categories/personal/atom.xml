@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: personal | Darío Cavuotti]]></title>
-  <link href="http://desyncr.github.io/categories/personal/atom.xml" rel="self"/>
-  <link href="http://desyncr.github.io/"/>
-  <updated>2014-01-12T20:40:06-03:00</updated>
-  <id>http://desyncr.github.io/</id>
+  <link href="http://me.syncr.com.ar//categories/personal/atom.xml" rel="self"/>
+  <link href="http://me.syncr.com.ar//"/>
+  <updated>2014-01-13T23:57:12-03:00</updated>
+  <id>http://me.syncr.com.ar//</id>
   <author>
     <name><![CDATA[Darío]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[On motivation]]></title>
-    <link href="http://desyncr.github.io/2013/08/23/on-motivation/"/>
+    <link href="http://me.syncr.com.ar//2013/08/23/on-motivation/"/>
     <updated>2013-08-23T22:02:00-03:00</updated>
-    <id>http://desyncr.github.io/2013/08/23/on-motivation</id>
+    <id>http://me.syncr.com.ar//2013/08/23/on-motivation</id>
     <content type="html"><![CDATA[<h2>A demotivated non-engaging environment</h2>
 
 <p>Unless you&rsquo;re a rock-star programmer or you run your own business, there are chances you don&rsquo;t like how things get done where you work. If you&rsquo;re a rock-star programmer you can easily choose where to work, you&rsquo;ve trillion job offers at the most varied places.
