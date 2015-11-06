@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>I quit - Darío Cavuotti</title>
+  <title>Compiling gearmand, libgearman and php-pecl-gearman on CentOS 6.5 - Darío Cavuotti</title>
   <meta name="author" content="Dario Cavuotti">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,8 +24,7 @@
   <meta itemprop="description" content="Dar&iacute;o Cavuotti"/>
 
   
-  <meta name="description" content="I just quit. I&rsquo;m still a bit excited. Don&rsquo;t really know what to do. I just did.
-Now the scary and unsettling future is all I have. &hellip;">
+  <meta name="description" content="I was having a bit of trouble compiling and installing gearmand job server on a brand new centos 6.5 server so here is a little guide on how to do it &hellip;">
   <meta name="keywords" content="Carlos Dario Cavuotti, Dar&iacute; Cavuotti, Carlos Cavuotti, Cavuotti, Web developer, blog, software, ">
 
   <!-- http://t.co/dKP3o1e -->
@@ -34,7 +33,7 @@ Now the scary and unsettling future is all I have. &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.desyncr.me/2013/10/07/i-quit">
+  <link rel="canonical" href="http://blog.desyncr.me/2014/04/13/compiling-gearmand-libgearman-and-php-pecl-gearman-on-centos-6-dot-5">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Darío Cavuotti" type="application/atom+xml">
@@ -74,7 +73,7 @@ Now the scary and unsettling future is all I have. &hellip;">
   <header>
     
       <a href="/">Go back to Home</a>
-      <h1 class="entry-title">I Quit</h1>
+      <h1 class="entry-title">Compiling Gearmand, Libgearman and Php-pecl-gearman on CentOS 6.5</h1>
     
     
       <p class="meta">
@@ -90,22 +89,59 @@ Now the scary and unsettling future is all I have. &hellip;">
   
 
 
-<time datetime="2013-10-07T11:37:00-03:00" pubdate data-updated="true">Oct 7<span>th</span>, 2013</time>
+<time datetime="2014-04-13T00:49:00-03:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I just quit.</p>
+<div class="entry-content"><p>I was having a bit of trouble compiling and installing gearmand job server on a brand new centos 6.5 server so here is a little guide on how to do it.</p>
 
-<p>I&rsquo;m still a bit excited. Don&rsquo;t really know what to do. I just did.
-Now the scary and unsettling future is all I have. Despair.
-Yet, there is this feeling of relief. Free at last. A bittersweet taste in my month. A little grief in my heart.</p>
+<!-- more -->
 
-<p>To all whom I appreciate: Good bye.</p>
 
-<p>There is no way back, only forward. That&rsquo;s where I&rsquo;m looking.</p>
+<h1>Install from source</h1>
+
+<p>First of all, this is a sort summary of all the process. Later on I&rsquo;ll create a more indepth article.</p>
+
+<p>The easiest way to go about it is to install from source. Not always the best alternative but the easiest for sure.</p>
+
+<h2>Get the latest tar for gearmand</h2>
+
+<p>Now there are two branches for gearmand: 1.0 (current stable &ndash; as of this writting) and 1.2 (development).
+Some things may or may not break with >=1.1 releases so here I&rsquo;ll compile against both branches. Latest from the stable branch (1.0.6) and from the development branch (1.1.12)</p>
+
+<ul>
+<li>first grab the gearmand tar</li>
+<li><p>configure make make install</p></li>
+<li><p>yum install boost-devel gcc-c++ libevent-devel</p></li>
+</ul>
+
+
+<h2>Install the php extension</h2>
+
+<pre><code>wget http://pecl.php.net/get/gearman-1.1.2.tgz
+phpize &amp;&amp; configure &amp;&amp; make &amp;&amp; sudo make install
+</code></pre>
+
+<h1>Install from EPEL</h1>
+
+<ul>
+<li><p>Grab the latests rpms from EPEL</p></li>
+<li><p>Install libgearman and php-pecl-gearman</p>
+
+<p>  yum install libgearman gearmand</p></li>
+</ul>
+
+
+<p>Alternatively you can grab the php extension from <a href="https://pecl.php.net/package/gearman">https://pecl.php.net/package/gearman</a> then:</p>
+
+<pre><code>phpize
+make &amp;&amp; compile
+</code></pre>
+
+<p>You should be good to go!</p>
 </div>
 
 
@@ -128,7 +164,7 @@ Yet, there is this feeling of relief. Free at last. A bittersweet taste in my mo
   
 
 
-<time datetime="2013-10-07T11:37:00-03:00" pubdate data-updated="true">Oct 7<span>th</span>, 2013</time>
+<time datetime="2014-04-13T00:49:00-03:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
     </p>
     
       <div class="sharing">
@@ -140,10 +176,8 @@ Yet, there is this feeling of relief. Free at last. A bittersweet taste in my mo
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/2013/08/23/on-motivation/" title="Previous Post: On motivation">&laquo; On motivation</a>
+        <a class="basic-alignment left" href="/2014/01/12/fun-with-pipes/" title="Previous Post: Fun with pipes">&laquo; Fun with pipes</a>
       
-      
-        <a class="basic-alignment right" href="/2014/01/12/fun-with-pipes/" title="Next Post: Fun with pipes">Fun with pipes &raquo;</a>
       
     </p>
   </footer>
