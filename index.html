@@ -1,308 +1,37 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Darío Cavuotti</title>
-  <meta name="author" content="Dario Cavuotti">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="robots" content="index, follow"/>
-  <meta name="distribution" content="global"/>
-  <meta name="rating" content="general"/>
-  <meta name="language" content="es_ES"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta property="og:url" content="http://blog.desyncr.me"/>
-  <meta property="og:site_name" content="Dar&iacute;o Cavuotti"/>
-  <meta property="og:title" content="Dar&iacute;o Cavuotti"/>
-  <meta property="og:description" content="Dar&iacute;o Cavuotti"/>
+	<title>Darío Cavuotti | Software Developer</title>
 
-  <meta itemprop="url" content="http://blog.desyncr.me"/>
-  <meta itemprop="name" content="Dar&iacute;o Cavuotti"/>
-  <meta itemprop="title" content="Dar&iacute;o Cavuotti"/>
-  <meta itemprop="description" content="Dar&iacute;o Cavuotti"/>
+	<link rel="icon" href="favicon.ico" type="image/png" />
 
-  
-  <meta name="description" content="I was having a bit of trouble compiling and installing gearmand job server on a brand new centos 6.5 server so here is a little guide on how to do it &hellip;">
-  <meta name="keywords" content="Carlos Dario Cavuotti, Dar&iacute; Cavuotti, Carlos Cavuotti, Cavuotti, Web developer, blog, software, ">
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://blog.desyncr.me">
-  <link href="/favicon.ico" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Darío Cavuotti" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link rel="stylesheet" href="/stylesheets/styles.css">
-<link rel="stylesheet" href="/stylesheets/pygment_trac.css">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-43427966-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
+	<link href="//fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+	<link href="//use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+        <!-- <link rel="stylesheet" href="css/themes/indigo-white.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
+	<link rel="stylesheet" href="css/themes/white-grey.css">
+	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
+	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
 </head>
-
 <body>
-    <div class="wrapper">
-        <header>
-    <h1>Darío</h1>
-        <p>Web Developer</p>
-        <div id="networks">
-            <h2>Networks</h2>
-            <p class="view">
-                <a href="http://github.com/desyncr/">GitHub</a> <small>Social coding</small>
-            </p>
-            <p class="view">
-                <a href="http://www.linkedin.com/in/dcavuotti">LinkedIn</a> <small>Social profile</small>
-            </p>
-            <p class="view last">
-                <a href="http://resume.desyncr.me/">Resume</a> <small>My resume</small>
-            </p>
-        </div>
-        <div id="projects">
-            <h2>Projects</h2>
-
-            <p class="view">
-                <a href="http://github.com/desyncr/btlive">BTlive</a> <small>Distributed streaming over BitTorrent (experimental)</small>
-            </p>
-
-            <p class="view">
-                <a href="https://github.com/desyncr/ruby-fcp">ruby-fcp</a> <small>Ruby client for FCP (Freenet)</small>
-            </p>
-
-
-            <p class="view">
-                <a href="http://github.com/desyncr/wtngrm">Wtngrm</a> <small>Wrapper around various Queue systems</small>
-            </p>
-
-            <p class="view">
-                <a href="http://github.com/desyncr/connected">Connected</a> <small>Library for Real time communication</small>
-            </p>
-
-            <p class="view">
-                <a href="http://github.com/tpb-hydra/proxy">Hydra</a> <small>Highly customizable Web mirror</small>
-            </p>
-
-        </div>
-
-</header>
-
-
-<section>
-
-
-
-  <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2014/04/13/compiling-gearmand-libgearman-and-php-pecl-gearman-on-centos-6-dot-5/">Compiling Gearmand, Libgearman and Php-pecl-gearman on CentOS 6.5</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-13T00:49:00-03:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I was having a bit of trouble compiling and installing gearmand job server on a brand new centos 6.5 server so here is a little guide on how to do it.</p>
-
-</div>
-  
-  
-    <footer>
-      <a href="/2014/04/13/compiling-gearmand-libgearman-and-php-pecl-gearman-on-centos-6-dot-5/">Read on &rarr;</a>
-    </footer>
-  
-
-
-  </article>
-
-
-  <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2014/01/12/fun-with-pipes/">Fun With Pipes</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-12T11:20:00-03:00" pubdate data-updated="true">Jan 12<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>One of the things that attracts me and make me love Linux for development is the flexibility and the infinite amount of ways to solve a problem it gives you.
-The unix <a href="http://www.faqs.org/docs/artu/ch01s06.html">mantra</a> says:</p>
-
-<pre><code>"Write programs that do one thing and do it well. Write programs to work together.
-Write programs to handle text streams, because that is a universal interface."
-</code></pre>
-
-<p>One of the many tools this philosophy is plastered into is in names pipes. Named pipes are an easy way to provide intercomunication between different programs. While one program read from it, another one can write to it. Basically sending each other messages, communicating.</p>
-
-</div>
-  
-  
-    <footer>
-      <a href="/2014/01/12/fun-with-pipes/">Read on &rarr;</a>
-    </footer>
-  
-
-
-  </article>
-
-
-  <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/10/07/i-quit/">I Quit</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-07T11:37:00-03:00" pubdate data-updated="true">Oct 7<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I just quit.</p>
-
-<p>I&rsquo;m still a bit excited. Don&rsquo;t really know what to do. I just did.
-Now the scary and unsettling future is all I have. Despair.
-Yet, there is this feeling of relief. Free at last. A bittersweet taste in my month. A little grief in my heart.</p>
-
-<p>To all whom I appreciate: Good bye.</p>
-
-<p>There is no way back, only forward. That&rsquo;s where I&rsquo;m looking.</p>
-</div>
-  
-  
-
-
-  </article>
-
-
-  <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/08/23/on-motivation/">On Motivation</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-23T22:02:00-03:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>A demotivated non-engaging environment</h2>
-
-<p>Unless you&rsquo;re a rock-star programmer or you run your own business, there are chances you don&rsquo;t like how things get done where you work. If you&rsquo;re a rock-star programmer you can easily choose where to work, you&rsquo;ve trillion job offers at the most varied places.
-Things are different when you just started and can&rsquo;t separate yourself from the crowd. You take jobs are chances to grow up. To learn and become a better professional.</p>
-
-<p>Chances are you found a nice place to work, with a nice environment to grow and learn everyday, or not. You may end at a bloodsucking, soul crushing job where there is no feedback and you&rsquo;re just another tool.</p>
-
-</div>
-  
-  
-    <footer>
-      <a href="/2013/08/23/on-motivation/">Read on &rarr;</a>
-    </footer>
-  
-
-
-  </article>
-
-
-</section>
-<footer>
-    <p><small>Hosted on GitHub Pages</small></p>
-    <p><small>Theme by <a href="https://github.com/asphxia/">Asphyxia</a>, based on <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-</footer>
-
-
-
-    </div>
-    <script src="/javascripts/scale.fix.js"></script>
-  </body>
+	<main>
+		<div class="intro">Hello, I'm Darío!</div>
+		<div class="tagline">Software Developer | Open Source Contributor</div>
+		<div class="icons-social">
+			<a target="_blank" href="https://github.com/desyncr"><i class="fab fa-github"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/dcavuotti"><i class="fab fa-linkedin"></i></a>
+			<a target="_blank" href="https://twitter.com/desyncr"><i class="fab fa-twitter"></i></a>
+                </div>
+	</main>
+</body>
 </html>
